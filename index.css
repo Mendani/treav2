@@ -31,13 +31,14 @@ header img{
 h1{
     font-size: 1em;
     font-weight: bold;
+    
     background: linear-gradient(90deg,
      green,
      blue,
      orange);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+   }
 h2{
     font-size: 2em;
 }
@@ -111,7 +112,6 @@ button:hover{
 }
 
 #tarjetas .card{
-   background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     padding: 20px ;
@@ -177,10 +177,11 @@ footer .containerfoot{
         justify-content: space-between;
     }
     .content{
+        width: 100%;
         background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYS2UV_VRznITXRgsS2Kfu_n852lh7KVQsCQ&s);
-        background-position: center center;
-        background-repeat: no-repeat;
+        background-position: center ;
         background-size: cover;
+        background-repeat: no-repeat;
         object-fit: cover;
     }
 

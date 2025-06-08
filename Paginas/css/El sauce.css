@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    background-image: url(https://www.welcomeuruguay.com/melo/imagenes/plaza-independencia.jpg);
+}
+
+input{
+    margin-top: 10%;
+    font-size: 25px;
+    border-radius: 50px;
+}
+section{
+    background-image: url(https://scontent.fmvd3-1.fna.fbcdn.net/v/t1.6435-9/201537052_1228628020934732_8929842785786274044_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=aP3MS4Zp2xAQ7kNvwE2fI3O&_nc_oc=AdlGd-W8Jq0rdg0GpHZBhxyTMYY7ypZzAEwMEQUetOrgrRHEpL5I5TUW6bH275KluuagB3ibdD4TLGsTsfEQwybs&_nc_zt=23&_nc_ht=scontent.fmvd3-1.fna&_nc_gid=0c9-7dVoTrxLtQDo5CIODQ&oh=00_AfNdIheWz56FharY483TQ7fe9FYiB4aosZZC-tkQfGkSHQ&oe=686C839B);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    object-fit: fill;
+}
+.subtitle{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    font-style: oblique;
+    margin-top: 5%;
+    text-shadow: 2px 5px greenyellow;
+  
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: oblique;
+    margin-top: 10%; ;
+    margin-bottom: 5%;
+    text-align: center;
+    text-shadow: 1px 4px skyblue;
+}
+
+p{
+    text-align: center;
+    padding: 0 80px;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    padding: 5px 25px;
+    margin-bottom: 30px;
+    color: antiquewhite;
+}
+
+h5{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align:  center;
+    font-family: cursive;
+    font-size: 3em;
+    text-shadow: 2px 5px orange;
+}
+
+.target{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.card .front{
+    transform: perspective(600px)rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+
+.card .front h2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+
+.card .back .mas{
+    border-top: solid 1px #f3f3f3;
+    height: 30px;
+    font-size: 20PX;
+    padding: 3px 8px;
+    border-radius: 50px;
+    color: black;
+}
+
+.card .back h2{
+    font-size: 30px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+.card .back p{
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+
+.card .back .mas:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+footer{
+    height: 80px;
+    color: white;
+    font-size: 25px;
+}
+
+footer button{
+    position: relative;
+    top: -30px;
+    left: -35px;
+    font-size: 1em;
+    border-radius: 50px;
+    align-items: center;
+   margin-left: 50%;
+   padding: 5px 10px ;
+   background: linear-gradient(90deg, green, blue, orange);
+}
+
