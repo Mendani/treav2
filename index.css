@@ -226,8 +226,67 @@ footer .containerfoot{
        )
     ,url("imagenes1/Imagen de WhatsApp 2025-03-31 a las 11.26.46_d45160b6.jpg");
     
+  }
 }
+@media (max-width: 719px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 10px;
+  }
 
+  header img {
+    padding: 10px;
+    width: 80px;
+    height: auto;
+  }
+
+  h1, h2, h3, p {
+    padding: 0 10px;
+    font-size: 1.2em;
+  }
+
+  .content {
+    padding: 100px 12px;
+  }
+
+  #tarjetas .content_p {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #tarjetas .card {
+    width: 90%;
+    margin: 10px 0;
+    background-size: cover;
+    padding: 20px;
+  }
+
+  #tarjetas p {
+    font-size: 0.9em;
+    padding: 0 10px;
+  }
+
+  footer .containerfoot {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  input {
+    width: 90%;
+    font-size: 1em;
+    margin: 1rem auto;
+  }
+}
 .card:nth-child(3){
      background-image: linear-gradient(
         0deg,
