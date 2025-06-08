@@ -181,13 +181,71 @@ footer button{
    padding: 5px 10px ;
    background: linear-gradient(90deg, green, blue, orange);
 }
-@media (min-width:720px) {
-    header{
-        position: fixed;
-        margin-top: 0;
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .content{
-        width: 100%;}
+/* Responsive para tablets y pantallas medianas */
+@media (max-width: 1024px) {
+  .target {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 90vw;
+    max-width: 400px;
+    height: auto;
+  }
+  p {
+    padding: 0 20px;
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 2.5em;
+  }
+  h4 {
+    font-size: 1.8em;
+    margin-top: 5%;
+  }
+  h5 {
+    font-size: 2em;
+  }
+  input {
+    font-size: 20px;
+    margin-top: 5%;
+  }
+}
+
+/* Responsive para móviles y pantallas chicas */
+@media (max-width: 600px) {
+  section {
+    background-size: cover;
+  }
+  .target {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    width: 95vw;
+    height: auto;
+    margin: 10px auto;
+  }
+  p {
+    padding: 0 10px;
+    font-size: 1.2em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  h5 {
+    font-size: 1.5em;
+  }
+  input {
+    font-size: 18px;
+    margin-top: 5%;
+    width: 90%;
+  }
+  footer button {
+    margin-left: 0;
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+}
+
