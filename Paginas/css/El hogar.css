@@ -208,3 +208,109 @@ article{
      transform: translateY(-2px);
      cursor: pointer;
 }
+
+/* Media Queries para pantallas pequeñas */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 50px;
+  }
+
+  .tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 15px;
+    padding-top: 100px;
+  }
+
+  .cards {
+    width: 200px;
+    height: 300px;
+    margin-left: 15px;
+  }
+
+  header {
+    font-size: 1.2em;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+
+  header img {
+    height: 60px;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  header input {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  header button {
+    margin-top: 10px;
+  }
+
+  .Ofertas {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    box-shadow: none;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 20px;
+    font-size: 1.5em;
+  }
+
+  .tarjetas {
+    grid-template-columns: 1fr;
+    padding-left: 5px;
+    padding-top: 50px;
+  }
+
+  .cards {
+    width: 90%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    font-size: 1.1em;
+  }
+
+  header img {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  header input, header button {
+    width: 100%;
+    max-width: none;
+    margin-top: 8px;
+  }
+
+  #btnshow {
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+  }
+
+  .Ofertas {
+    width: 100%;
+    position: static;
+    margin: 15px 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  hr {
+    margin-bottom: 15px;
+  }
+}
