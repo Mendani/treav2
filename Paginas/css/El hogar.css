@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    font-family: cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: oblique;  
+    height: 85px;  
+}
+
+header img{
+    height: 80px;
+    width: auto;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+h1{
+    text-shadow: 2px 5px orange;
+}
+header input{
+    font-size: 1em;
+    font-family: sans-serif;
+    font-style: oblique;
+    background-color: goldenrod;
+    border-radius: 50px;
+    border: 3px solid black;
+    box-shadow: 2px 5px 8px gray;
+    margin-top:25px ;
+}
+
+header button{
+    font-size: 1em;
+    border-radius: 50px;
+    padding: 5px 4px; 
+    box-shadow: 2px 5px 8px gray;
+}
+
+hr{
+    border: 3px solid gray;
+    border-radius: 50px;
+    box-shadow: 2px 5px 6px gray;
+    padding-bottom: 5px;
+    margin-bottom:5px ;
+    background-color: darkgray;
+}
+
+#btnshow{
+  position: relative;
+  top: 50px;
+  right:40px;
+    float: right;
+    margin: 5px;
+    border-radius: 30px;
+    font-size: 30px;
+    background-image: url();
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    background-color: blue;
+    color: whitesmoke;
+    box-shadow: 3px 5px 5px gray;
+ }
+
+.Ofertas{
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    float: right;
+    margin: 5px;
+    border: 3px solid skyblue;
+    width:150px;
+    height: 100%;
+    text-align: center;
+    box-shadow: 4px 8px 10px 5px skyblue;
+   
+}
+
+.Ofertas ul li{
+    list-style: none;
+    margin: 30px;
+}
+
+.container{
+    display: block;
+    max-width: 1200px;
+    padding-top:200px ;
+    padding: 0 200px;
+    text-align: center;
+    font-size: 2em;
+    font-family: Verdana;
+}
+h3{
+    padding-top: 70px;
+}
+article{
+    padding-top:100px;
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding-top: 200px;
+    padding-left:  30px;
+}
+
+.cards{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    margin-left: 30px;
+}
+
+.cards .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.cards .front{
+    transform: perspective(600px)rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.cards .front img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .front h2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.cards .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+.cards .back h2{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+
+.cards .back p{
+    letter-spacing:  1px;
+}
+
+.cards:hover .front{
+    transform:perspective(600px) rotateY(180deg);
+}
+
+.cards:hover .back{
+    transform:perspective(600px) rotateY(0deg);
+}
+
+.cardsb{
+    border-radius: 50px;
+    padding: 10px;
+    background: linear-gradient(90deg, orange, red, yellow);
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra inicial */
+  transition: box-shadow 0.3s ease; /* Transición suave de la sombra */
+}
+
+.cardsb:hover{
+     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el cursor */
+     transform: translateY(-2px);
+     background-image: url(https://qph.cf2.quoracdn.net/main-qimg-0f8ced990e07e62e10917c05ecbe05d8-lq);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     object-fit: cover;
+     color: whitesmoke;
+}
+
+.Ofertas ul li img{
+    height: 80px;
+    width: 80px;
+}
+
+.Ofertas:hover li{
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el cursor */
+     transform: translateY(-2px);
+     cursor: pointer;
+}
