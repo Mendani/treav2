@@ -75,7 +75,7 @@ hr{
     height: 100%;
     text-align: center;
     box-shadow: 4px 8px 10px 5px skyblue;
-   
+    word-warp:break-word
 }
 
 .Ofertas ul li{
