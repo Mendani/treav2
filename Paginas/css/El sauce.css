@@ -1,187 +1,222 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Reset y estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    height: 120px;
-    background-image: url(https://www.welcomeuruguay.com/melo/imagenes/plaza-independencia.jpg);
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000; /* opcional, para mejor contraste */
 }
 
-input{
-    margin-top: 10%;
-    font-size: 25px;
-    border-radius: 50px;
-}
-section{
-    background-image: url(https://scontent.fmvd3-1.fna.fbcdn.net/v/t1.6435-9/201537052_1228628020934732_8929842785786274044_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=aP3MS4Zp2xAQ7kNvwE2fI3O&_nc_oc=AdlGd-W8Jq0rdg0GpHZBhxyTMYY7ypZzAEwMEQUetOrgrRHEpL5I5TUW6bH275KluuagB3ibdD4TLGsTsfEQwybs&_nc_zt=23&_nc_ht=scontent.fmvd3-1.fna&_nc_gid=0c9-7dVoTrxLtQDo5CIODQ&oh=00_AfNdIheWz56FharY483TQ7fe9FYiB4aosZZC-tkQfGkSHQ&oe=686C839B);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    object-fit: fill;
-}
-.subtitle{
-    display: flex;
-    text-align: center;
-    justify-content: center;
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* para que el contenido pueda ajustar en pantallas pequeñas */
+  height: 120px;
+  background-image: url(https://www.welcomeuruguay.com/melo/imagenes/plaza-independencia.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 20px;
 }
 
-h3{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3em;
-    font-weight: bold;
-    font-style: oblique;
-    margin-top: 5%;
-    text-shadow: 2px 5px greenyellow;
-  
+/* Input dentro del header */
+input {
+  margin-top: 10%;
+  font-size: 25px;
+  border-radius: 50px;
+  padding: 8px 15px;
+  border: none;
+  width: 250px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-h4{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    font-style: oblique;
-    margin-top: 10%; ;
-    margin-bottom: 5%;
-    text-align: center;
-    text-shadow: 1px 4px skyblue;
+/* Sección con fondo */
+section {
+  background-image: url(https://scontent.fmvd3-1.fna.fbcdn.net/v/t1.6435-9/201537052_1228628020934732_8929842785786274044_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=aP3MS4Zp2xAQ7kNvwE2fI3O&_nc_oc=AdlGd-W8Jq0rdg0GpHZBhxyTMYY7ypZzAEwMEQUetOrgrRHEpL5I5TUW6bH275KluuagB3ibdD4TLGsTsfEQwybs&_nc_zt=23&_nc_ht=scontent.fmvd3-1.fna&_nc_gid=0c9-7dVoTrxLtQDo5CIODQ&oh=00_AfNdIheWz56FharY483TQ7fe9FYiB4aosZZC-tkQfGkSHQ&oe=686C839B);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: fill;
+  padding: 40px 20px;
+  color: antiquewhite;
 }
 
-p{
-    text-align: center;
-    padding: 0 80px;
-    align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2em;
-    padding: 5px 25px;
-    margin-bottom: 30px;
-    color: antiquewhite;
+/* Subtítulos */
+.subtitle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
-h5{
-    margin-top: 20px;
-    margin-bottom: 40px;
-    text-align:  center;
-    font-family: cursive;
-    font-size: 3em;
-    text-shadow: 2px 5px orange;
+/* Encabezados */
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  font-style: oblique;
+  margin-top: 5%;
+  text-shadow: 2px 5px greenyellow;
 }
 
-.target{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: oblique;
+  margin: 10% 0 5% 0;
+  text-align: center;
+  text-shadow: 1px 4px skyblue;
 }
 
-.card{
-    position: relative;
-    width: 300px;
-    height: 350px;
-    margin: 10px;
-}
-.card .face{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s;
-
+h5 {
+  margin: 20px 0 40px 0;
+  text-align: center;
+  font-family: cursive;
+  font-size: 3em;
+  text-shadow: 2px 5px orange;
 }
 
-.card .front{
-    transform: perspective(600px)rotateY(0deg);
-    box-shadow: 0 5px 10px #000;
+/* Párrafos */
+p {
+  text-align: center;
+  padding: 5px 25px;
+  margin-bottom: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2em;
+  color: antiquewhite;
 }
 
-.card .front img{
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
+/* Grid para tarjetas */
+.target {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 0 20px 40px 20px;
 }
 
-
-.card .front h2{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    background: rgba(0, 0, 0, .4);
-    text-align: center;
+/* Tarjetas */
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 10px;
+  perspective: 600px;
 }
 
-.card .back{
-    transform: perspective(600px) rotateY(180deg);
-    background:rgb(3, 35, 54);
-    padding: 15px;
-    color: #f3f3f3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    box-shadow: 0 5px 10px #000;
-    
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
 }
 
-
-.card .back .mas{
-    border-top: solid 1px #f3f3f3;
-    height: 30px;
-    font-size: 20PX;
-    padding: 3px 8px;
-    border-radius: 50px;
-    color: black;
+.card .front {
+  transform: rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
 }
 
-.card .back h2{
-    font-size: 30px;
-    margin-top: 30px;
-    letter-spacing: 2px;
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.card .back p{
-    letter-spacing: 1px;
-    font-size: 20px;
+.card .front h2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, .4);
+  text-align: center;
 }
 
-
-.card .back .mas:hover{
-    background-color: orange;
-    cursor: pointer;
+.card .back {
+  transform: rotateY(180deg);
+  background: rgb(3, 35, 54);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+  border-radius: 10px;
 }
 
-.card:hover .front{
-    transform: perspective(600px) rotateY(180deg);
+.card .back .mas {
+  border-top: solid 1px #f3f3f3;
+  height: 30px;
+  font-size: 20px;
+  padding: 3px 8px;
+  border-radius: 50px;
+  color: black;
+  transition: background-color 0.3s ease;
 }
 
-.card:hover .back{
-    transform: perspective(600px) rotateY(360deg);
+.card .back .mas:hover {
+  background-color: orange;
+  cursor: pointer;
 }
 
-
-footer{
-    height: 80px;
-    color: white;
-    font-size: 25px;
+.card .back h2 {
+  font-size: 30px;
+  margin-top: 30px;
+  letter-spacing: 2px;
 }
 
-footer button{
-    position: relative;
-    top: -30px;
-    left: -35px;
-    font-size: 1em;
-    border-radius: 50px;
-    align-items: center;
-   margin-left: 50%;
-   padding: 5px 10px ;
-   background: linear-gradient(90deg, green, blue, orange);
+.card .back p {
+  letter-spacing: 1px;
+  font-size: 20px;
 }
+
+/* Animación hover tarjetas */
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: rotateY(360deg);
+}
+
+/* Footer */
+footer {
+  height: 80px;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+footer button {
+  font-size: 1em;
+  border-radius: 50px;
+  padding: 5px 10px;
+  background: linear-gradient(90deg, green, blue, orange);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+footer button:hover {
+  background-color: orange;
+}
+
+/* ------------------------------ */
 /* Responsive para tablets y pantallas medianas */
 @media (max-width: 1024px) {
   .target {
@@ -209,13 +244,16 @@ footer button{
   input {
     font-size: 20px;
     margin-top: 5%;
+    width: 100%;
+    max-width: 300px;
   }
 }
 
-/* Responsive para móviles y pantallas chicas */
+/* Responsive para móviles y pantallas pequeñas */
 @media (max-width: 600px) {
   section {
     background-size: cover;
+    padding: 20px 10px;
   }
   .target {
     grid-template-columns: 1fr;
@@ -244,9 +282,7 @@ footer button{
     width: 90%;
   }
   footer button {
-    margin-left: 0;
     padding: 8px 15px;
     font-size: 0.9em;
   }
 }
-
