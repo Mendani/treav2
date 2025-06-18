@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    #estadoNegocio {
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+    .abierto {
+      background-color: green;
+    }
+    .cerrado {
+      background-color: red;
+    }
+    #infoHorario {
+      margin-top: 15px;
+      padding: 10px;
+      border: 2px solid #ccc;
+      display: none;
+      max-width: 300px;
+      font-family: sans-serif;
+    }
+    #infoHorario ul li{
+        margin-bottom: 10px;
+    }
+  </style>
+    <link rel="stylesheet" href="css/Equipo Insopo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <section id="Logo">
+    <div class="img1">
+        <img src="imagenes/width_800.jpg" alt="">
+         
+    </div>
+    <h1>Chivitreria <br> Equipo Insopo</h1>
+        
+  </section>
+  
+  <section id="Calendario">
+    <button id="estadoNegocio">Cargando...</button>
+
+    <div id="infoHorario">
+      <strong style="margin-left: 25px; margin-bottom: 15px;">Días y Horarios de Atención:</strong>
+     <ul style="list-style: none;margin: 5px;">
+         <li>Lunes a Viernes: 20:00 a 0:30</li>
+         <li>Sábados: 20:00 a 01:00</li>
+         <li>Domingos: Cerrado</li>
+     </ul>
+   </div>
+  </section>
+  <hr style="border: 2px solid whitesmoke; width: 100%;">
+  <section>
+    <footer>
+        <p>Estamos Para Servirle</p>
+        &copy; 
+        <a href="#">Menu</a>
+    </footer>
+  </section>
+  <script src="scripts/Horarios.js"></script>
+</body>
+</html>
