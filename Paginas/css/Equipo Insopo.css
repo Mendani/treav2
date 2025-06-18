@@ -1,7 +1,7 @@
 body{
     display: flex;
     flex-direction: column;
-    background:linear-gradient(to right, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)), url(/imagenes/3dcf0570-ba12-40cc-92ca-274887b39acd.jpeg);
+    background:linear-gradient(to right, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)), url(../imagenes/3dcf0570-ba12-40cc-92ca-274887b39acd.jpeg);
      background-size: cover;
       background-position: center;
       color: white;
